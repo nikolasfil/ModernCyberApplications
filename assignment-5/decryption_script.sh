@@ -37,7 +37,7 @@ echo -e "\n\n ┌─ Decrypt The Key  ─┐ \n\n"
 
 
 # openssl rsautl -decrypt -inkey "${receiver}/${receiver}_private.pem" -in "${sender}_decrypted/d_randomkey.enc.bin" -out "${receiver}/${receiver}_randomkey.bin"
-openssl pkeyutl -decrypt -inkey "${receiver}/${receiver}_dem" -in "${sender}_decrypted/d_randomkey.enc.bin" -out "${sender}_decrypted/${receiver}_randomkey.bin"
+openssl pkeyutl -decrypt -inkey "${receiver}/${receiver}_private.pem" -in "${sender}_decrypted/d_randomkey.enc.bin" -out "${sender}_decrypted/${receiver}_randomkey.bin"
 # rm "${sender}_decrypted/d_randomkey.enc.bin"
 
 echo -e " └─ Decrypt The Key ┘ \n\n"
