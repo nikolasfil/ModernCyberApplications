@@ -1,0 +1,14 @@
+$TTL 3D
+@ IN SOA ns.example.com. admin.example.com. (
+2008111001 ;serial, today’s date + today’s serial number
+8H ;refresh, seconds
+2H ;retry, seconds
+4W ;expire, seconds
+1D) ;minimum, seconds
+@ IN NS ns.example.com. ;Address of name server
+@ IN MX 10 mail.example.com. ;Primary Mail Exchanger
+www IN A 192.168.122.101 ;Address of www.example.com
+mail IN A 192.168.122.102 ;Address of mail.example.com
+ns IN A 192.168.122.10 ;Address of ns.example.com
+*.example.com. IN A 192.168.122.100 ;Address for other URL in
+;example.com. domain
