@@ -2,7 +2,7 @@ zone "example.com" {
 	type master;
 	file "/var/cache/bind/example.com.db";
 };
-zone "0.168.192.in-addr.arpa" {
+zone "122.168.192.in-addr.arpa" {
 	type master;
-	file "/var/cache/bind/192.168.0";
+	file "/var/cache/bind/192.168.122";
 };
